@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+.heading {
+    width: 2048px;
+    height: 50px;
+    background-color: rgb(198, 151, 242);
+    margin: -7px;
+    padding: 0;
+}
+.name {
+    color: white;
+    font-size: 2rem;
+    padding-top: 8px;
+    padding-left: 12px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top:20px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+}
+.box {
+    border: 1px solid black;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover {
+    background-color: rgb(211, 201, 220);
+    cursor: pointer;
+}
+.gameinfo {
+    margin-left: 41px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.info {
+    padding-right: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hello {
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+.image {
+    height: 300px;
+    
+}
+.image img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+#reset {
+    background-color: rgb(218, 182, 250);
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .game {
+        padding-top: 0;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(3,15vw);
+        grid-template-rows: repeat(3,15vw);
+    }
+}
